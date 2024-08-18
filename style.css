@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: brown;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 40%;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: burlywood;
+    transition: all 0.3s linear;
+}
+input::placeholder{
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+input:hover{
+    background-color: rgb(241, 118, 29);
+}
+input:focus{
+    background-color: beige;
+}
+input:focus:valid{
+    border: 5px solid green;
+}
+input:invalid{
+    border: 5px solid red;
+    animation: shake 1.5s ease infinite;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(5px);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
